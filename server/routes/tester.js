@@ -59,7 +59,7 @@ router.post("/", async (req, res) => {
       giveway,
       practice,
     } = req.body;
-    console.log(req.body);
+    // console.log(req.body);
 
     const bodyScore = colorblind + longsight + astigmatic + reflec;
     const bodyresult = bodyScore >= 30 ? true : false;

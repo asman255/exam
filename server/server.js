@@ -5,12 +5,10 @@ const PORT = 5003;
 const morgan = require("morgan");
 require("dotenv/config");
 
-const { readdirSync } = require("fs");
 
 const tester = require("./routes/tester")
 
-// const campingRoute = require("./routes/camping");
-// const profileRoute = require("./routes/profile");
+
 
 // Middleware
 app.use(cors());
@@ -24,11 +22,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
 
-// readdirSync("./routes").map((r) => app.use("/api", require("./routes/" + r)));
-// console.log(readdirSync("./routes").map((r) => app.use("/api", require("./routes/" + r))))
 
-// app.use("/api", campingRoute);
-// app.use("/api",profileRoute)
 
 app.use("/api/tester",tester)
 
