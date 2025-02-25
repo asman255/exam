@@ -86,6 +86,22 @@ const Tester = () => {
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
+              <label htmlFor="id" className="block font-semibold">
+                ID
+              </label>
+              <input
+                type="text"
+                name="id"
+                value={formData.id}
+                onChange={handleChange}
+                className="w-full p-2 border rounded"
+                disabled={id ? true : false}
+                required
+                minLength={13}
+                maxLength={13}
+              />
+            </div>
+            <div>
               <label htmlFor="name" className="block font-semibold">
                 ชื่อ
               </label>
@@ -95,6 +111,7 @@ const Tester = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
+                required
               />
             </div>
 
@@ -108,6 +125,7 @@ const Tester = () => {
                 value={formData.lastname}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
+                required
               />
             </div>
           </div>

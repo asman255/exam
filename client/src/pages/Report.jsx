@@ -11,7 +11,7 @@ const Report = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5003/api/tester?search=${search}`
+          `http://localhost:5003/api/tester`
         );
         setTesters(response.data);
       } catch (error) {
