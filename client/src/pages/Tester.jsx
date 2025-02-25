@@ -80,14 +80,14 @@ const Tester = () => {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4">Tester Form</h1>
+        <h1 className="text-2xl font-bold mb-4">บันทึกการสอบ</h1>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
               <label htmlFor="name" className="block font-semibold">
-                Name
+                ชื่อ
               </label>
               <input
                 type="text"
@@ -100,7 +100,7 @@ const Tester = () => {
 
             <div>
               <label htmlFor="lastname" className="block font-semibold">
-                Lastname
+                นามสกุล
               </label>
               <input
                 type="text"
@@ -112,11 +112,11 @@ const Tester = () => {
             </div>
           </div>
 
-          <h3 className="font-semibold mb-2">Physical Tests</h3>
+          <h3 className="font-semibold mb-2">ทดสอบร่างกาย</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
             <div>
               <label htmlFor="colorblind" className="block">
-                Color Blindness
+                ทดสอบตาบอดสี
               </label>
               <input
                 type="checkbox"
@@ -129,7 +129,7 @@ const Tester = () => {
 
             <div>
               <label htmlFor="longsight" className="block">
-                Long Sight
+                ทดสอบสายตายาว
               </label>
               <input
                 type="checkbox"
@@ -142,7 +142,7 @@ const Tester = () => {
 
             <div>
               <label htmlFor="astigmatic" className="block">
-                Astigmatism
+                ทดสอบสายตาเอียง
               </label>
               <input
                 type="checkbox"
@@ -155,7 +155,7 @@ const Tester = () => {
 
             <div>
               <label htmlFor="reflec" className="block">
-                Reflex
+                ทดสอบการตอบสนองของร่างกาย
               </label>
               <input
                 type="checkbox"
@@ -167,11 +167,11 @@ const Tester = () => {
             </div>
           </div>
 
-          <h3 className="font-semibold mb-2">Theory Tests</h3>
+          <h3 className="font-semibold mb-2">ทดสอบภาคทฤษฏี</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
             <div>
               <label htmlFor="sign" className="block">
-                Traffic Signs
+                ป้ายจราจร
               </label>
               <input
                 type="checkbox"
@@ -184,7 +184,7 @@ const Tester = () => {
 
             <div>
               <label htmlFor="line" className="block">
-                Road Lines
+                เส้นจราจร
               </label>
               <input
                 type="checkbox"
@@ -197,7 +197,7 @@ const Tester = () => {
 
             <div>
               <label htmlFor="giveway" className="block">
-                Give Way
+                การให้ทาง
               </label>
               <input
                 type="checkbox"
@@ -209,10 +209,10 @@ const Tester = () => {
             </div>
           </div>
 
-          <h3 className="font-semibold mb-2">Practical Test</h3>
+          <h3 className="font-semibold mb-2">การสอบภาคปฏิบัติ</h3>
           <div className="mb-4">
             <label htmlFor="practice" className="block">
-              Passed Practical Test
+              ผ่านการสอบภาคปฏิบัติ
             </label>
             <input
               type="checkbox"

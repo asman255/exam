@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
   return (
@@ -14,13 +14,19 @@ const Navbar = () => {
                 >
                   Home
                 </a>
+                <a
+                  href="/tester"
+                  className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  เพิ่มข้อมูล
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
